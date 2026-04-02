@@ -1,0 +1,11 @@
+厨房项目-动作识别部分
+
+.env中包含了项目要用到的opencv-4.9.0。
+
+Components中是需要补充实现的动作识别动态库项目MotionRecognizer。
+识别的功能请实现在motion_recognizer.cpp中，框架已预留。
+除pch.h中用于向外开放的方法需要我们共同商讨修改外，其他代码的内部实现都可以随意改动，只要返回的结果正确就OK。
+
+Demos中是用于测试动态库的MotionRecognizeTester，包含一段样例视频。
+动态库构建64位Release后会自动将新版本复制到Demo中，只需要Demo也重新生成一次，就可以测试最新的动态库了。
+Demo项目中除了用于对接动态库的MotionAdapter需要我们共同商讨修改外，其他代码都可以随意改动。
